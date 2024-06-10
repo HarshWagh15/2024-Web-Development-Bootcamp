@@ -1,0 +1,22 @@
+h1{
+    font-family: 'Climate Crisis', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+color: white;
+    
+}
+p{
+    color: orange;
+}
+body{
+    background-color: black;
+    text-align: center;
+
+}
+#image{
+    border: 5px solid white;
+    width: 100%;
+}
+#project{
+    width: 50%;
+    margin-left: 25%;
+}
