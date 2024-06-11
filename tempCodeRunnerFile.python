@@ -1,0 +1,30 @@
+import random
+
+# Responses for different types of messages
+greetings = ["Hello!", "Hi there!", "Hey!"]
+farewells = ["Goodbye!", "Bye!", "See you later!"]
+responses_to_unknown = ["I'm not sure I understand.", "Could you please repeat that?", "I'm sorry, I didn't get that."]
+
+# Function to generate a response
+def generate_response(message):
+    message = message.lower()
+    if message.startswith("hi") or message.startswith("hello"):
+        return random.choice(greetings)
+    elif message.startswith("bye"):
+        return random.choice(farewells)
+    else:
+        return random.choice(responses_to_unknown)
+
+# Main function for the chatbot
+def chat():
+    print("Chatbot: Hello! How can I assist you today?")
+    while True:
+        user_input = input("You: ")
+        response = generate_response(user_input)
+        print("Chatbot:", response)
+        if "bye" in user_input.lower():
+            return
+
+# Start the chatbot
+if __name__== "__main__":
+    chat()

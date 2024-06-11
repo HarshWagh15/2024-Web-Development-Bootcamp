@@ -1,0 +1,9 @@
+"ls" = Used for list all items in Currant Directory.
+"cd" = Used for change Directory or go to the perticular folder.
+eg. cd 2023\ CSS\ Bootcamp/
+    cd ..     for getting 1 step backward.
+Create new file by " FOlder name touch FILENAME.any Extension "
+open by "start Filename "
+"rm filename/" is used to remove files.
+"rm */" is used to remove all the files.
+"rm -r DIrectory Name/" is used to remove directory.

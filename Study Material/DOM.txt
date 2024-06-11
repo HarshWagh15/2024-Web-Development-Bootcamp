@@ -1,0 +1,64 @@
+DOM 
+
+ Selecting HTML Elements with Javascript:
+1.document.getElementsByTagName("li")[2].style.color="violet";
+2.document.getElementsByClassName("ABC")[2].style.color="violet";
+3.document.getElementById("title").innerHTML="Good bye";
+4.document.querySelector(".list").innerHTML="Good bye";
+5.document.querySelector("button").style.backgroundColor="yellow";
+6.document.querySelector("button").classList.add("invisible");   using add we can add class 'invisible' to program
+7.document.querySelector("button").classList.remove("class name");  we can remove class
+8.document.querySelector("button").classList.toggle("classname");  we can toggle between add and remove.
+
+
+Manipulating Attributes:
+
+1.document.querySelector("a").attributes  used to get all attributes
+2.document.querySelector("a").setAttribute("href","https://www.bing.com");  used to redirect
+3.document.querySelector("a").getAttribute("href")  used to get desired attribute 
+
+
+Higher order functions:
+
+function add(num,num2){
+return num1 + num2;
+}
+
+function calc(num1,num2,operator){
+return operator(num1,num2);
+
+output:
+debugger;
+calc(3,4,add);
+7
+
+
+
+
+
+minify.com is used for reducing the size of code in javascript
+
+
+important :::::::::::::
+
+
+import express from "express";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import BodyParser  from "body-parser";
+import bodyParser from "body-parser";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const app = express();
+const port = 3000;
+// Body Parser is used to sent data to module.  used everwhere.
+app.use(bodyParser.urlencoded ({extended:true}));
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
+
+app.use(express.static("public")); // used for linking public folder which includes images files etc.
+
+
